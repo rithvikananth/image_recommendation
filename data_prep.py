@@ -19,6 +19,8 @@ def load_cdl_data():
     # convert list into pandas dataframe
     df = pd.DataFrame.from_dict(data)
     print(len(df))
+    images = df["image"]
+    print(images)
 
     return df
 
